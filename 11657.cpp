@@ -1,69 +1,51 @@
-#include <iostream>
+#include <cstdio>
 #include <algorithm>
 #include <vector>
-#include <queue>
 using namespace std;
-const int MAX_V = 502;
-const int INF = (int)2e9;
+const int INF = 1000000000;
+struct Edge {
+    int from;
+    int to;
+    int cost;
+};
 
-int dist[MAX_V], cycle[MAX_V];
-bool inQ[MAX_V];
-vector<pair<int, int>> adj[MAX_V];
-
+int dist[501];
+int N, M;
 int main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    int T;
+    scanf("%d %d", &N, &M);
+    vector<Edge> a(M);
 
-    int N, M;
-    cin >> N >> M;
     for (int i = 0; i < M; i++){
-        int from, to, val;
-        cin >> from >> to >> val;
-
-        adj[from].push_back({to, val});
+        scanf("%d %d %d", &a[i].from, &a[i].to, &a[i].cost);
     }
+    fill(dist, dist + N + 1, INF);
+    bool minusCycle = false;
+    dist[1] = 0;
 
-    fill(dist, dist + MAX_V, INF);
+    for (int i = 1; i <= N; i++){
+        for (int j = 0; j < M; j++){
+            int from = a[j].from;
+            int to = a[j].to;
+            int cost = a[j].cost;
 
-    int start = 1;
-    queue<int> Q;
-    dist[start] = 0;
-    inQ[start] = true;
-
-    Q.push(start);
-    cycle[start]++;
-
-    while (!Q.empty()){
-        int cur = Q.front();
-        Q.pop();
-
-        inQ[cur] = false;
-        for (auto &p : adj[cur]){
-            int nxt = p.first;
-            int cost = p.second;
-
-            if (dist[nxt] > dist[cur] + cost){
-                dist[nxt] = dist[cur] + cost;
-
-                if (!inQ[nxt]){
-                    cycle[nxt]++;
-
-                    if (cycle[nxt] >= N){
-                        cout << "-1" << endl;
-                        return 0;
-                    }
-
-                    Q.push(nxt);
-                    inQ[nxt] = true;
+            if (dist[from] != INF && dist[to] > dist[from] + cost){
+                dist[to] = dist[from] + cost;
+                if (i == N){
+                    minusCycle = true;
                 }
             }
         }
     }
 
-    for (int i = 1; i <= N; i++){
-        if (i == start) continue;
-        cout << ((dist[i] != INF) ? dist[i] : -1) << '\n';
+    if (minusCycle){
+        puts("-1");
+        return 0;
     }
 
+    for (int i = 2; i <= N; i++){
+        if (dist[i] == INF) dist[i] = -1;
+        printf("%d\n", dist[i]);
+    }
     return 0;
 }
