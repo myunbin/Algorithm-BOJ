@@ -1,4 +1,4 @@
-## Algorithm-BOJ
+## algorithm-BOJ
 
 This repository includes codes of solved algorithmic problems from BOJ([Baekjoon Online Judge](https://acmicpc.net))
 
