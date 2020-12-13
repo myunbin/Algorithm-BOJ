@@ -55,7 +55,6 @@ int main(){
             if (DFS(i)) ans++;
         }
     }
-
     cout << N -  ans << endl;
     return 0;
 }
