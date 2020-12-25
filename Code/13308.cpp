@@ -40,6 +40,10 @@ void dijkstra() {
 			pq.pop();
 		} while (!pq.empty() && visited[curN][curP]);
 		
+		if (curN == N) {
+			cout << dist[curN][curP] << '\n';
+			return;
+		}
 		if (visited[curN][curP]) break;
 		visited[curN][curP] = true;
 		
@@ -55,12 +59,6 @@ void dijkstra() {
 			}
 		}
 	}
-	
-	ll ans = INF;
-	for (int i = 0; i < MAX_P; i++) 
-		ans = min(ans, dist[N][i]);
-	
-	cout << ans << '\n';
 }
 
 int main() {
