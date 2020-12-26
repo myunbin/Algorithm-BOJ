@@ -7,26 +7,18 @@ int main() {
 	
 	int n;
 	cin >> n;
-	vector<pair<int, int>> a(n);
+	
+	vector<int> a(n);
+	vector<int> b(n);
 	for (int i = 0; i < n; i++) {
-		cin >> a[i].first;
-		a[i].second = i;
+		cin >> a[i];
+		b[i] = a[i];
 	}
 	sort(a.begin(), a.end());
+	a.erase(unique(a.begin(), a.end()), a.end());
 	
-	
-	vector<pair<int, int>> ans(n);
-	
-	int cnt = 0;
-	
-	for (int i = 0; i < n; i++) {
-		ans[i].first = a[i].second;
-		ans[i].second = cnt;
-		if (i != n - 1 && a[i].first != a[i + 1].first) cnt++;
-	}
-	sort(ans.begin(), ans.end());
-	
-	for (auto x : ans) cout << x.second << ' ';
+	for (int x : b) 
+		cout << lower_bound(a.begin(), a.end(), x) - a.begin() << ' ';
 	
 	return 0;
 }
