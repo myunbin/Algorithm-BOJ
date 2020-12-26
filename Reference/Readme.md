@@ -19,4 +19,8 @@
 - Math (mostly Number theory)
 
    <https://rkm0959.tistory.com/category/PS>
+ 
+- index tree
+
+   <https://ialy1595.github.io/post/binary-indexed-tree/>
    
