@@ -5,7 +5,7 @@
 ---
 
 - segment tree에 관하여 : 여러가지 구현 방법, lazy propagation 등
-
+   
    <https://gumgood.tistory.com/169>
 
 - binary search에 관하여 : 여러가지 구현 방법, optimization 등
@@ -15,3 +15,8 @@
 - dp 종류
 
   <https://codeforces.com/blog/entry/325>
+  
+- Math (mostly Number theory)
+
+   <https://rkm0959.tistory.com/category/PS>
+   
