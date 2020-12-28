@@ -19,6 +19,7 @@
 - Math (mostly Number theory)
 
    <https://rkm0959.tistory.com/category/PS>
+   https://rkm0959.tistory.com/178?category=828364
  
 - index tree
 
