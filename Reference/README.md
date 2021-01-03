@@ -4,27 +4,18 @@
 - [justiceHui](https://justicehui.github.io/study/2019/03/25/AlgorithmSite/)
 ---
 
-- segment tree에 관하여 : 여러가지 구현 방법, lazy propagation 등
-   
-   <https://gumgood.tistory.com/169>
+- segment tree에 관하여 : 여러가지 구현 방법, lazy propagation 등	 <https://gumgood.tistory.com/169>
 
-- binary search에 관하여 : 여러가지 구현 방법, optimization 등
-
-  <https://gumgood.tistory.com/168?category=346889>
+- binary search에 관하여 : 여러가지 구현 방법, optimization 등	 <https://gumgood.tistory.com/168?category=346889>
   
-- dp 종류
-
-  <https://codeforces.com/blog/entry/325>
+- dp 종류		<https://codeforces.com/blog/entry/325>
   
-- Math (mostly Number theory)
-
-   <https://rkm0959.tistory.com/category/PS>
-   https://rkm0959.tistory.com/178?category=828364
+- Math (number theory)		<https://rkm0959.tistory.com/178?category=828364>
  
-- index tree
-
-   <https://ialy1595.github.io/post/binary-indexed-tree/>
+- index tree		<https://ialy1595.github.io/post/binary-indexed-tree/>
    
-- algorithm들의 친절한 설명
+- algorithm들의 친절한 설명    <https://codingdog.tistory.com/>
 
-   <https://codingdog.tistory.com/>
+---
+
+- STL tuple class, structured binding 	<http://sweeper.egloos.com/2994673> , <http://egloos.zum.com/sweeper/v/3203903>
