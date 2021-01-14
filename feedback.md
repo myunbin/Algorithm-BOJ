@@ -13,3 +13,6 @@
 ---
 ### 21/01/03 전입 후 100솔!
 ---
+
+- **USACO 문제처럼 사고력, 응용력이 주가 되는 문제들에 취약함.**
+- segment tree 응용 https://stonejjun.tistory.com/83 참고해서 seg-tree 응용하는 방법 좀 익혀보기.
