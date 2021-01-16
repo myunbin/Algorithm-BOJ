@@ -16,3 +16,4 @@
 
 - **USACO 문제처럼 사고력, 응용력이 주가 되는 문제들에 취약함.**
 - segment tree 응용 https://stonejjun.tistory.com/83 참고해서 seg-tree 응용하는 방법 좀 익혀보기.
+- fenwick tree 코드 이해했으니까 외워서 쓰도록하고, fenwick으로 lazy하는 방법도 나중을 위해 알아두기.
