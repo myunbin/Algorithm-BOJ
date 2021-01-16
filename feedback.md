@@ -18,3 +18,4 @@
 - segment tree 응용 https://stonejjun.tistory.com/83 참고해서 seg-tree 응용하는 방법 좀 익혀보기.
 - fenwick tree 코드 이해했으니까 외워서 쓰도록하고, fenwick으로 lazy하는 방법도 나중을 위해 알아두기.
 - <2261 가장 가까운 두 점> 이거 sweeping + set 제대로 이해하고 분할정복으로 푸는 방법도 이해하기.
+  https://github.com/myunbin/algorithm-BOJ/blob/master/Code/2261.cpp
