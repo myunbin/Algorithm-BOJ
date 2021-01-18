@@ -19,3 +19,4 @@
 - fenwick tree 코드 이해했으니까 외워서 쓰도록하고, fenwick으로 lazy하는 방법도 나중을 위해 알아두기.
 - <2261 가장 가까운 두 점> 이거 sweeping + set 제대로 이해하고 분할정복으로 푸는 방법도 이해하기.
   https://github.com/myunbin/algorithm-BOJ/blob/master/Code/2261.cpp
+- <2449 전구>, <1970 건배>, <3012 올바른 괄호 문자열>의 문제들에서 범위 내에서 가능한 범위를 쪼개서 확인하는 그런 느낌을 기억해두자. (시간복잡도는 보통 O(N^3)이 나오게 된다.)
