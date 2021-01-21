@@ -20,4 +20,4 @@
 - <2261 가장 가까운 두 점> 이거 sweeping + set 제대로 이해하고 분할정복으로 푸는 방법도 이해하기.
   https://github.com/myunbin/algorithm-BOJ/blob/master/Code/2261.cpp
 - <2449 전구>를 보고 다음 두 문제와의 유사성을 떠올리지 못했음. <1970 건배>, <3012 올바른 괄호 문자열>의 문제들에서 범위 내에서 가능한 범위를 쪼개서 확인하는 그런 느낌을 기억해두자. (시간복잡도는 보통 O(N^3)이 나오게 된다.)
-- USACO silver 수준에서 꽤 많은 빈도로 prefix sum이랑 sweeping이 나오는거 같다. 둘 다 마스터하도록하자.
+- USACO silver 수준에서 prefix sum이랑 sweeping이 꽤 높은 빈도로 출제되는 것 같다. 둘 다 마스터하도록하자.
