@@ -23,3 +23,4 @@
 - USACO silver 수준에서 prefix sum이랑 sweeping이 꽤 높은 빈도로 출제되는 것 같다. 둘 다 마스터하도록하자.
 - plane sweeping 아직 많이 어려운거 같다. 3392, 2185 등 풀어보면서 연습하자. https://codedoc.tistory.com/421
 - https://rebro.kr/94 lazy propagation, fenwick tree의 range update, point query 에 대해서
+- Rectangular Pasture, Cowntagion, MooTube (Silver), MooTube (Gold), Rental Service, 연속합과 쿼리, Lifeguards (Silver) 업데이트 해야함!
