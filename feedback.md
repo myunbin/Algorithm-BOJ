@@ -24,3 +24,5 @@
 - plane sweeping 아직 많이 어려운거 같다. 3392, 2185 등 풀어보면서 연습하자. https://codedoc.tistory.com/421
 - https://rebro.kr/94 lazy propagation, fenwick tree의 range update, point query 에 대해서
 - Rectangular Pasture, Cowntagion, MooTube (Silver), MooTube (Gold), Rental Service, 연속합과 쿼리, Lifeguards (Silver) 업데이트 해야함!
+- sort할때 lambda 써서 편하게 처리할 수 있다. 문법이니까 알아두면 유용할 듯 https://hwan-shell.tistory.com/84
+
