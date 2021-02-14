@@ -24,4 +24,4 @@
 
 - Geeks for Geeks 알고있는거 모르는거 점검하기 좋을 듯하다. <https://www.geeksforgeeks.org/fundamentals-of-algorithms/>
 - 전체적으로 한번 읽어보면서 점검하면 좋을 것 같다. 이거 인쇄해놓고 아마 파견가있는 동안 완독한다고 생각하면 좋을 듯? <https://cses.fi/book/book.pdf>
-
+- https://a2oj.com/ps codeforce 연습하기!
