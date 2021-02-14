@@ -17,6 +17,7 @@
 - <화성지도>와 같이 sweeping + segment tree는 단골.
 - segment tree 응용 https://stonejjun.tistory.com/83 참고해서 seg-tree 응용하는 방법 좀 익혀보기.
   https://github.com/myunbin/algorithm-BOJ/blob/master/Code/2261.cpp
+- <springborads>, <최대 증가 직사각형 집합> 같이 segment tree + dp 같은 느낌도 잘 기억해두자. sweeping 시발
   
 ### Sweeping
 
