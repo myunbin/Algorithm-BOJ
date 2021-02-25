@@ -7,5 +7,6 @@ int ccw(Point p1, Point p2, Point p3){
 	else return t1<t2 ? -1 : 1; 
 }
 
+// abs(t1-t2) 는 p1, p2, p3 가 만드는 평행사변형의 넓이를 나타낸다.
 // 반시계: -1, 시계: 1, 한직선: 0
 //https://www.acmicpc.net/blog/view/27
