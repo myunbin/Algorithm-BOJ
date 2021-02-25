@@ -7,6 +7,13 @@ int ccw(Point p1, Point p2, Point p3){
 	else return t1<t2 ? -1 : 1; 
 }
 
+//v2
+int ccw(pii p1, pii p2, pii p3) {
+	int t1 = p1.f * p2.s + p2.f * p3.s + p3.f * p1.s;
+	int t2 = p1.s * p2.f + p2.s * p3.f + p3.s * p1.f;
+	return t1==t2 ? 0 : (t1-t2)/abs(t1-t2);
+}
+
 // abs(t1-t2) 는 p1, p2, p3 가 만드는 평행사변형의 넓이를 나타낸다.
 // 반시계: -1, 시계: 1, 한직선: 0
 //https://www.acmicpc.net/blog/view/27
