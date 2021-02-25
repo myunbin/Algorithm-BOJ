@@ -31,7 +31,10 @@
 - <2449 전구>, <1970 건배>, <3012 올바른 괄호 문자열> - i ~ j 에서 분할정복의 느낌으로 i ~ k, k+1 ~ j로 쪼개는 느낌
 - <7812 중앙트리> tree dp 할 때 많이 느낀거 변화량에 집중해야할때도 있음.
 - https://www.secmem.org/blog/2020/10/24/dp/ dp modeling 하기
-- 
+
+### Stack
+
+- stack이 활용되는 양상이 상당히 어려운거 같음. stack 분류에서 풀어야할 문제가 많다.
 
 ### 기타
 - sort할때 lambda 써서 편하게 처리할 수 있다. 문법이니까 알아두면 유용할 듯 https://hwan-shell.tistory.com/8
