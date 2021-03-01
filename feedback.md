@@ -1,7 +1,8 @@
 ## Feedback
 - **USACO, KOI, COCI 등 Olympiad 문제들 많이 풀어보기 - 주당 silver 1셋 정도**
 - https://www.acmicpc.net/board/view/9802 알고리즘을 왜 해야할까
-- 
+
+
 ### Graph
 
 - <20531 인간관계> **components의 수를 union-find로 세고**, Stirling(+Bell) number는 재밌어 보이니까 한번 봐두자.
