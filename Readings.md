@@ -27,7 +27,7 @@
 - ~~전체적으로 한번 읽어보면서 점검하면 좋을 것 같다. 이거 인쇄해놓고 아마 파견가있는 동안 완독한다고 생각하면 좋을 듯? <https://cses.fi/book/book.pdf>~~ 프린트함
 - https://a2oj.com/ps codeforce 연습하기!
 - ICPC, Olympiad 대비 handbook https://www.comp.nus.edu.sg/~stevenha/myteaching/competitive_programming/cp1.pdf
-
+- https://usaco.guide/dashboard/ USACO Guide
 --- 
 Complex Algorithms
 
