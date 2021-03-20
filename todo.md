@@ -2,7 +2,7 @@
 
 - **solved.ac 클래스 밀어버리기(아마 1~5 정도?) : 5번에 필요한 알고리즘은 참고해서 파견 기간 동안 어느정도 읽어와보자**
 - **USACO, KOI, COCI 등 Olympiad 문제들 많이 풀어보기**
-- **codeforce constructive, math, greedy 이걸로 계속 양치기해라.** https://codeforces.com/problemset?tags=greedy,combine-tags-by-or,constructive%20algorithms,math,-1500
+- **codeforce constructive, math, greedy 이걸로 계속 양치기해라.코포는 게임이다 게임ㅋㅋ** https://codeforces.com/problemset?tags=greedy,combine-tags-by-or,constructive%20algorithms,math,-1500
 
 - 종만북 독파하기
   - dp 파트 최적부분구조, brute force로 처음에 접근하는 것들 생각해보면서 문제들 다시 풀어보기
