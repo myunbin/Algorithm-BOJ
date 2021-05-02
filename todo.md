@@ -13,3 +13,5 @@
   - https://rkm0959.tistory.com/category/PS/PS%20%EC%A0%95%EC%88%98%EB%A1%A0%20%EA%B0%80%EC%9D%B4%EB%93%9C?page=2- 
 
 - 심심하면 고급 알고리즘 개요 정도 알아두기 : https://w1608205560-itz377479.slack.com/files/T01HH8CDA2V/F01PNAQM77S
+
+- 13448 부터 다시 업로드하면 됨.
