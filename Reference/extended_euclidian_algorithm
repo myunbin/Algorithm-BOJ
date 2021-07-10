@@ -1,0 +1,5 @@
+tpl ex_gcd(ll a, ll b) {
+    if (b == 0) return {1, 0, a};
+    auto [x, y, g] = ex_gcd(b, a%b);
+    return {y, x-a/b*y, g};
+}
