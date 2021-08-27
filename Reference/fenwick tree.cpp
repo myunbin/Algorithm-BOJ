@@ -1,28 +1,19 @@
-// code from https://aahc.tistory.com/18
-
-struct Fenwick {
-    vector<int> fw;
- 
-    void reset(int n) {
-        fw.assign(n+1, 0);
+struct fwt {
+    // 1-indexed!
+    vector<int> tr;
+    void rst(int n) {
+        tr.assign(n+1, 0);
     }
- 
-    void update(int idx, int val) {
-        for (; idx < (int)fw.size(); idx += (idx & -idx)) fw[idx] += val;
+    void upd(int i, int v) {
+        for (; i < tr.size(); i += (i&-i)) tr[i] += v;
     }
- 
-    //finds [1, r] sum
-    int query(int r) { 
+    int qry(int r) { //[1,r]
         int sum = 0;
-        for (; r; r -= (r&(-r))) sum += fw[r];
+        for (; r; r -= (r&(-r))) sum += tr[r];
         return sum;
     }
- 
-    //finds [l, r] sum
-    int query(int l, int r) {
-        if(l == 0) return query(r);
-        return query(r) - query(l-1);
+    int qry(int l, int r) { //[l, r]
+        if(l == 0) return qry(r);
+        return qry(r) - qry(l-1);
     }
 };
-
-
