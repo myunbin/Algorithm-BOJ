@@ -1,10 +1,10 @@
 //https://justicehui.github.io/hard-algorithm/2020/03/24/effective-mcmf/
-const int MAXN = 202020;
+const int MAXN = 555; // max num of vertex
 struct MCMF{
     int s, t; //source, sink
     struct Edge{ int v, c, d, dual; };
     vector<Edge> g[MAXN];
-    void addEdge(int s, int e, int c, int d){
+    void addEdge(int s, int e, int c, int d){ //start, end, capacity, cost
         g[s].push_back({e, c, d, (int)g[e].size()});
         g[e].push_back({s, 0, -d, (int)g[s].size()-1});
     }
@@ -73,5 +73,4 @@ struct MCMF{
         }while(update());
         return pii(cst, fl);
     }
-}
-
+};
