@@ -18,10 +18,11 @@ struct fwt {
     }
 
     // find kth value
+    // size of a tree should be 1<<ceil(log2(size))
     // let kth value be X, then kth(k) returns X+1 
     int kth(int k){
         int idx=0;
-        int lg = 32-__builtin_clz((int)tr.size())-1+1;
+        int lg = 32-__builtin_clz((int)tr.size())-1;
         for(int i=lg;i>=0;i--){
             if(idx+(1<<i) <= (1<<lg)-1 && tr[idx+(1<<i)] < k){
                 k-=tr[idx+(1<<i)];
