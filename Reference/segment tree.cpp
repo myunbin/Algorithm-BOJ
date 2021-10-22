@@ -1,3 +1,6 @@
+//AWARE of..
+//1. type of query - might be max, min, gcd.. etc
+//2. policy of update - tr[nd] = eg. max(tr[nd], v)
 struct segtr{
     //0-indexed!
     vector<ll> tr, a;
