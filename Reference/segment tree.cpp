@@ -1,48 +1,41 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
-vector<ll> tree, a;
-
-ll init(int node, int le, int ri) {
-	if (le == ri) return tree[node] = a[le];
-	int mid = le + ri >> 1;
-	return tree[node] = init(node * 2, le, mid) + init(node * 2 + 1, mid + 1, ri);
-}
-
-ll update(int node, int le, int ri, int idx, int d) {
-	if (ri < idx || idx < le) return tree[node];
-	if (le == ri) return tree[node] = d;
-	int mid = le + ri >> 1;
-	return tree[node] = update(node * 2, le, mid, idx, d) + update(node * 2 + 1, mid + 1, ri, idx, d);
-}
-
-ll sum(int node, int le, int ri, int ql, int qr) {
-	if (ri < ql || qr < le) return 0;
-	if (ql <= le && ri <= qr) return tree[node];
-	int mid = le + ri >> 1;
-	return sum(node * 2, le, mid, ql, qr) + sum(node * 2 + 1, mid + 1, ri, ql, qr);
-}
-
-int main() {
-	ios_base::sync_with_stdio(false);
-  	cin.tie(nullptr);
-	
-	int n, m, k;
-	cin >> n >> m >> k;
-	
-	a.resize(n);
-	tree.resize(4 * n);
-	
-	for (int i = 0; i < n; i++) cin >> a[i];
-	init(1, 0, n - 1);
-	
-	m += k;
-	while (m--) {
-		int a, b, c;
-		cin >> a >> b >> c;
-		if (a == 1) update(1, 0, n - 1, b - 1, c);
-		else cout << sum(1, 0, n - 1, b - 1, c - 1) << '\n';
-	}
-
-	return 0;
-}
+struct segtr{
+    //0-indexed!
+    vector<ll> tr, a;
+    int n;
+    void rst(int sz) {
+        n = sz;
+        tr.resize((n+1)<<2);
+        a.resize(n+1);
+    }
+    void init(int nd, int le, int ri) {
+        if (le==ri) {
+            tr[nd] = a[le];
+            return;
+        }
+        int md = le+ri>>1;
+        init(nd<<1, le, md), init(nd<<1|1, md+1, ri);
+        tr[nd] = tr[nd<<1]+tr[nd<<1|1];
+    }
+    void upd(int nd, int le, int ri, int i, ll v) {
+        if (i<le || ri<i) return;
+        if (le==ri) {
+            tr[nd] = v;
+            return;
+        }
+        int md = le+ri>>1;
+        upd(nd<<1, le, md, i, v), upd(nd<<1|1, md+1, ri, i, v);
+        tr[nd] = tr[nd<<1]+tr[nd<<1|1];
+    }
+    void upd(int i, ll v) {
+        upd(1, 0, n-1, i, v);
+    }
+    ll qry(int nd, int le, int ri, int ql, int qr) {
+        if (qr<le || ri<ql) return 0;
+        if (ql<=le && ri<=qr) return tr[nd];
+        int md = le+ri>>1;
+        return qry(nd<<1, le, md, ql, qr)+qry(nd<<1|1, md+1, ri, ql, qr);
+    }
+    ll qry(int le, int ri) {
+        return qry(1, 0, n-1, le, ri);
+    }
+};
